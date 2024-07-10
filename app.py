@@ -4,7 +4,6 @@ from whoosh.qparser import MultifieldParser
 
 app = Flask(__name__)
 
-# Open the existing index
 ix = open_dir("indexdir")
 
 @app.route('/')
