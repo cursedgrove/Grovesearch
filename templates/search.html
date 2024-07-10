@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1c1c1c, #2c2c2c);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.search-box {
+    margin-top: 20px;
+}
+
+.search-box form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.search-box input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    background: #444;
+    color: #fff;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-box button img {
+    width: 20px;
+    height: 20px;
+}
+
+</style>
+
+
+    <div class="container">
+        <div class="logo">
+            <img src="https://seeklogo.com/images/B/brave-logo-F5E1D99D9E-seeklogo.com.png" alt="Brave Logo">
+        </div>
+        <div class="search-box">
+            <form action="/search" method="post">
+                <input type="text" name="query" placeholder="Search the web privately" autofocus>
+                <button type="submit"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png" alt="Search"></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
